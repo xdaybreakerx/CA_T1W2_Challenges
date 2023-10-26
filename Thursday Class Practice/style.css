@@ -11,3 +11,47 @@
     transform: scale(2) translate(50px, 50px) rotate(360deg);
     background-color: blue;
 }
+
+img {
+    width: 200px
+}
+
+.card-parent{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid red;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px 5px black;
+}
+
+#second {
+    margin: 50px;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: animation-for-second;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-for-second {
+    0% {
+        width: 100px;
+    }
+    50% {
+        width: 200px;
+    }
+    100% {
+        width: 100px;
+    }
+}
