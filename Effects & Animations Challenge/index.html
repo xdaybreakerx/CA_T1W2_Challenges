@@ -22,16 +22,31 @@
         .puppy-img {
           width: 200px;
           height: 200px;
+          animation: appear 3s forwards;
+          transition: 2s;
+        }
+
+        @keyframes appear {
+          0% {
+            width: 100px;
+            height: 100px;
+          }
+          50% {
+            width: 300px;
+            height: 300px;
+          }
+          100% {
+            width: 200px;
+            height: 200px;
+          }
         }
 
         .puppy-img:hover {
-          width: 150%;
-          height: 150%;
-          transition: 2s;
-          transform: rotate(45deg);
+          transform: scale(1.5,1.5) rotate(45deg);
           filter: grayscale(1)
           
         }
+
     </style>
 
     <img class="puppy-img" src="./cute-puppy.jpg"/>
@@ -39,20 +54,3 @@
 
 </body>
 </html>
-
-<!--  
-
-  Needs keyframes!
-
-  @keyframes appear {
-    0% {
-
-    }
-    50% {
-
-    }
-    100% {
-
-    }
-  }
--->
