@@ -1,13 +1,13 @@
 #first {
+    margin: 25px;
     height: 100px;
     width: 100px;
+    display: flex;
     background-color: red;
     transition: .5s;
 }
 
 #first:hover {
-    /* height: 200px;
-    width: 200px; */
     transform: scale(2) translate(50px, 50px) rotate(360deg);
     background-color: blue;
 }
@@ -35,13 +35,14 @@ img {
 }
 
 #second {
-    margin: 50px;
+    margin: 25px;
     height: 100px;
     width: 100px;
     background-color: red;
+    display: flex;
     animation-name: animation-for-second;
     animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
 @keyframes animation-for-second {
@@ -55,3 +56,59 @@ img {
         width: 100px;
     }
 }
+
+.parent-typing-effect {
+    display: flex;
+}
+
+#typing-effect {
+    font-size: 24px;
+    animation: typing-animation .5s infinite, change-width 2s steps(30, end) 1;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+@keyframes typing-animation {
+    0% {
+        border-right: none;
+    }
+    100% {
+        border-right: 2px solid black;
+    }
+}
+
+@keyframes change-width {
+    0% {
+        width: 0;
+        
+    }
+    75% {
+        width: 100%;
+    }
+}
+
+.typography {
+    margin: 100px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+}
+
+.class1 {
+    font-size: 2em;
+}
+/* em is relative to the immediate parent's font size
+rem is relative to the root element's font size */
+
+body {
+    font-size: 24px;
+}
+
+:root {
+    font-size: 10px;
+}
+
+/* see fonts.google.com */
