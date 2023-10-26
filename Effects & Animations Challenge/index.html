@@ -7,14 +7,52 @@
 <body>
 
     <style>
+        .puppy-link {
+          color:green;
+        }
+
+        .puppy-link:visited {
+          color:pink;
+        }
+
+        .puppy-link:hover {
+          text-decoration: none;
+        }
+
         .puppy-img {
           width: 200px;
           height: 200px;
         }
+
+        .puppy-img:hover {
+          width: 150%;
+          height: 150%;
+          transition: 2s;
+          transform: rotate(45deg);
+          filter: grayscale(1)
+          
+        }
     </style>
 
     <img class="puppy-img" src="./cute-puppy.jpg"/>
-    <a class="puppy-link" href="https://www.puppyspot.com/">Buy a Puppy</a>
+    <a class="puppy-link" href="https://www.puppyspot.com/"><br>Buy a Puppy</a>
 
 </body>
 </html>
+
+<!--  
+
+  Needs keyframes!
+
+  @keyframes appear {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+
+    }
+  }
+-->
