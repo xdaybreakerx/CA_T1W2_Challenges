@@ -1,14 +1,14 @@
 h1 {
-    font-size: 4px;
+    font-size: 40px;
 }
 
 @media screen and (min-width: 400px) {
     h1 {
-        font-size: 10px
+        font-size: 10px;
     }
 }
 
-@media screen and (mid-width: 700px) {
+@media screen and (min-width: 700px) {
     h1 {
         font-size: 20px;
     }
@@ -16,18 +16,68 @@ h1 {
 
 @media print {
     h1 {
-        color: red
+        color: red;
     }
 }
 
 @media (orientation: landscape) {
     h1 {
-        background-color: blue
+        background-color: blue;
     }
 }
 
 @media (orientation: portrait) {
     h1 {
-        background-color: lightgray
+        margin-top: 100px;
     }
+}
+
+
+.parent-flex {
+    border: 4px solid red;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    /* justify-content - across the main axis */
+    justify-content: center;
+    /* align-items - across the cross axis */
+    align-items: flex-end;
+}
+
+.child-flex {
+    height: 80px;
+    width: 80px;
+    background-color: blue;
+    margin: 10px;
+    font-size: 48px;
+    color: white;
+    text-align: center;
+}
+
+/* .item-1 {
+    flex-shrink: 5;
+}
+
+.item-2 {
+    flex-basis: 120px;
+}
+
+.item-3 {
+    flex-grow: 2;
+} */
+
+.parent-flex-2 {
+    border:4px solid red;
+    margin-top: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.child-flex-2 {
+    height: 80px;
+    width: 80px;
+    background-color: blue;
 }
