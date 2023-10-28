@@ -14,3 +14,7 @@ A less serious (but still effective) resource is [Flex Froggy](https://flexboxfr
 5. Sass
 
 We also started discussing Agile project management and started using Trello! 
+
+During Saturdays class we:
+- created a sitemap using [Draw.io](https://app.diagrams.net/)
+- Created a wireframe with [Figma](https://www.figma.com)
