@@ -33,4 +33,16 @@ header {
             }
         }
     }
+
+
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+
+        a {
+            text-decoration: none;
+            color: rgb(21, 21, 175)
+        }
+    }
 }

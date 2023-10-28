@@ -22,4 +22,13 @@ header .logo-name .name .coder-text {
 }
 header .logo-name .name .academy-text {
   color: #1c3c5c;
+}
+header #nav-items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+}
+header #nav-items a {
+  text-decoration: none;
+  color: rgb(21, 21, 175);
 }/*# sourceMappingURL=style.css.map */
