@@ -1,0 +1,38 @@
+//Defining common values
+$default-width: 300px;
+$primary-color: coral;
+
+//Defining the mixin
+@mixin italic-bold {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.movie-card {
+
+    width: $default-width;
+    box-shadow: 1px 1px 5px lightgray;
+    border-radius: 15px;
+    overflow: hidden;
+
+    img {
+        width: $default-width;
+    }
+
+    h2 {
+        color: $primary-color;
+    }
+
+    button {
+        background: $primary-color;
+        color: white;
+    }
+
+    p {
+        @include italic-bold;
+    }
+
+    .movie-info {
+        padding: 10px;
+    }
+}
