@@ -1,0 +1,42 @@
+// Regular CSS:
+
+//.scss-parent {
+//     font-size: 24px;
+//     color: red;
+// }
+
+// .scss-parent:hover {
+//     color: black;
+// }
+
+// .scss-parent .scss-child-1 {
+//     color: darkgreen;
+// }
+
+// .scss-parent .scss-child-1 .scss-child-2 {
+//     color: darksalmon;
+//     background-color: lightgray;
+// }
+
+// SCSS comparison:
+
+$primary-color: red; 
+$secondary-color: darkgreen;
+
+.scss-parent { 
+    font-size: 24px;
+    color: $primary-color;
+
+    &:hover {
+        color: black;
+    }
+
+    .scss-child-1 {
+        color: $secondary-color;
+
+        .scss-child-2 {
+            color: darksalmon;
+            background-color: lightgray;
+        }
+    }
+}
