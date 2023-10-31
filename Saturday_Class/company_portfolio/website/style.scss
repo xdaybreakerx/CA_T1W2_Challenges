@@ -1,12 +1,17 @@
-$primary-color: #ffb6b6;
-$secondary-color: #d9d9d9;
-$primary-background: #a5a5a5;
+$primary-color: #cdb4db;
+$secondary-color: #a2d2ff;
+$primary-background: #ffafcc;
 
 
 
 body {
     margin: 0;
     background: $primary-background;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
@@ -44,5 +49,29 @@ header {
             text-decoration: none;
             color: rgb(21, 21, 175)
         }
+    }
+}
+
+footer {
+    background-color: $secondary-color;
+    padding: 16px;
+    text-align: center;
+
+    .social-media{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 32px;
+
+        a {
+            i {
+                font-size: 24px;
+                color: black;
+
+            }
+         }
+    }
+
+    .info {
+        color: black;
     }
 }

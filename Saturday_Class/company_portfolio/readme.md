@@ -33,3 +33,29 @@ Here is the code for the header we have:
 
 </header>
 ```
+
+### Footer
+Footer has social media links, and contact/address information. 
+
+Here is the code that we have for the Footer:
+
+```html
+<footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+
+        <div class="info">
+            <p>Contact: 0400 000 000</p>
+            <p>Address: 0 Street, Country</p>
+        </div>
+    </footer>
+```
